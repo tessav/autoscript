@@ -14,7 +14,7 @@ with Browser('chrome') as browser:
     mainurl = "https://www.gumtree.sg/my/message.html"
     browser.visit(mainurl)
     browser.fill('email', 'primedeliveryenquiry@gmail.com') # replace with own username and password
-    browser.fill('password', 'Flashdel414#q')
+    browser.fill('password', 'somepw')
     buttonLogin = browser.find_by_text("Log in")
     buttonLogin.click()
     time.sleep(1) # Loading buffer
